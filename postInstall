@@ -1,0 +1,36 @@
+Base Image Update
+1          Subscription Management Repository Update – This will enable all file types
+a.              Open a Terminal Window
+
+b.              sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms
+
+c.         sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+d.              Install 1 Package – Total Size 22 k – Installed Size 32 k – Is this OK [y/N] – y
+
+·                Installed: epel-release-8-14.el8.noarch
+
+·                Complete
+
+e.              sudo yum install ntfs-3g
+
+f.               Install 2 Packages – Total Size 318 k – Installed Size 685 k – Is this OK [y/N] – y
+
+g.              Extra Packages for Enterprise Linux 8 -  Is this OK [y/N] - y
+
+·                Installed: ntfs-3g-2:2021.8.22-2.el8.x86_64
+
+·                Complete
+
+2          Virtual Machine Manager Hypervisor Installation
+a.              Sudo yum install virt-manager
+
+b.              Install 4 Packages – Total Size 1.6 M – Installed Size 8.3 M – Is this OK [y/N] – y
+
+c.              Red Hat Enterprise Linux 8 for x86_64 – AppStream (RPMs) -  Is this OK [y/N] - y
+
+d.              Key Imported Successfully – Is this OK [y/N] - y
+
+·                Installed: python3-argcomplete – 1.9.3-6.el8.noarch, python3-libvirt-6.0.0-1.module+el8.3.0+6423+e4cb6418.x86_64, virt-manager-2.2.1-4.el8.noarch, virt-manager-common-2.2.1-4.el8.noarch
+
+·                Complete
