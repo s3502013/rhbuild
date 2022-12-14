@@ -4,7 +4,7 @@ echo "Base Image Update"
 
 # Subscription Management Repository Update – This will enable all file types
 
-sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms -y
+sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms
 
 sleep 2
 
